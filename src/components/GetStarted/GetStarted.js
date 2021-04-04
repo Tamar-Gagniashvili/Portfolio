@@ -21,9 +21,6 @@ const GetStarted = (props) => {
             "number":{
               "value": 150
             },
-            "color": {
-                "value": "rgb(10, 100, 80)"
-            },
             "size":{
               "value": 3
             }
@@ -41,7 +38,7 @@ const GetStarted = (props) => {
         />
         <div className="mainWrapper">
             <div className="getStartedText">
-                <h1 style={{color:"yellow"}}>Hello</h1>
+                <h1>Hello</h1>
                 <h1>My name is Tamar</h1>
                 <h1>Web-Developer</h1>
             </div>

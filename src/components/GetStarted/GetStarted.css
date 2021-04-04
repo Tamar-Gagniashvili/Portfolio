@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Sacramento&display=swap');
 
 .getStartedWrapper{
     width: 100%;
@@ -7,7 +8,8 @@
     /* background-image: url('../../assets/Screenshot\ 2021-04-04\ 163128.png'); */
     background-size: cover;
     /* filter: blur(3px); */
-    font-family: 'Sacramento', cursive;
+    /* font-family: 'Sacramento', cursive; */
+    font-family: 'Akaya Kanadaka', cursive;
 }
 
 .mainWrapper{
@@ -66,7 +68,7 @@
     padding: 26px;
     background-color: rgb(60, 146, 118);
     border-radius: 50px;
-    box-shadow: 0 0 70px 0 #5be44f;
+    box-shadow: 0 0 70px 0 #8fb48f;
     outline: none;
     border: none;
     font-weight: bold;
