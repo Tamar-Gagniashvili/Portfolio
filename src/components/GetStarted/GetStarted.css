@@ -2,8 +2,9 @@
 
 .getStartedWrapper{
     width: 100%;
-    background-color: rgb(10, 66, 40);
-    background-image: url('../../assets/Screenshot\ 2021-04-04\ 163128.png');
+    background-color: black;
+    /* background-color: rgb(10, 66, 40); */
+    /* background-image: url('../../assets/Screenshot\ 2021-04-04\ 163128.png'); */
     background-size: cover;
     /* filter: blur(3px); */
     font-family: 'Sacramento', cursive;
