@@ -1,0 +1,43 @@
+
+
+.layout{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    background-color: #0e1212;
+}
+
+
+header{
+    z-index: 1;
+    margin: 0;
+    height: 6vh;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    background-color: #0e1212;
+}
+
+header h1{
+    font-size: 15px;
+    font-family: "MG Glaho Drunk", sans-serif;
+    color: #ccc;
+}
+
+
+
+.headerItems{
+    position: absolute;
+    top: 5;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerItem{
+    display: inline-block;
+    margin: 10px;
+    color: #ccc;
+}
+

@@ -1,0 +1,152 @@
+.photo1{
+    --i:1;
+    
+}
+.photo2{
+    --i:2;
+}
+.photo3{
+    --i:3;
+}
+.photo4{
+    --i:4;
+}
+.photo5{
+    --i:5;
+}
+.photo6{
+    --i:6;
+}
+.photo7{
+    --i:7;
+}
+.photo8{
+    --i:8;
+}
+
+
+
+.projectPage{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.projectsWrapper{
+    position: absolute;
+    top: 20%;
+    right:30%;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    background-color: rgba(0, 0, 0, 0.001);
+}
+
+
+
+@keyframes animate
+{
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.projectsWrapper span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004)
+}
+
+
+
+.projectsWrapper span::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1191cc, #4b2532);
+}
+.projectsWrapper span::before{
+    content:'';
+    background: linear-gradient(45deg, #1191cc, #4b2532);
+    filter: blur(30px);
+}
+
+
+
+
+.projectsWrapper span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .triangleUp{
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;
+}
+
+.triangleDown{
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+} */
+
+
+.projectsWrapper span img:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+h1{
+    font-size: 70px;
+    position: absolute;
+    bottom: 20%;
+    margin: auto;
+    color: slateblue;
+}
+
+h1::before{
+    content: "<h1>";
+    font-size: 20px;
+    color: rgb(107, 105, 107);
+    font-style: italic;
+}
+h1::after{
+    content: "<h1/>";
+    font-size: 20px;
+    color: rgb(107, 105, 107);
+    font-style: italic;
+}
+
+.particle{
+    position: absolute;
+    top: -10%;
+    left: 5%;
+}
+
+
+
+
+
+
+

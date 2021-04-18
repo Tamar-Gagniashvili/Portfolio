@@ -30,6 +30,8 @@
     margin: 0;
     text-align: center;
     padding-top: 10%;
+    font-size: 30px;
+    line-height: 50px;
 }
 
 .getStartedImage{
@@ -82,3 +84,24 @@
 }
 
 .blur {filter: blur(4px);}
+
+/* h1::before{
+    content: '<h1>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -4rem;
+    left: -1rem;
+    font-family: 'Sacramento', cursive;
+}
+
+h1::after{
+    content: '<h1/>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    left: -1rem;
+    bottom: -5rem;
+} */
