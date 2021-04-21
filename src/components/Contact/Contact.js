@@ -14,16 +14,16 @@ const Contact = (props) => {
   return (
     <div className="contactPage">
       <div className="contactWrapper">
-        <div className="contactText">
+        <div data-aos="zoom-out-up" className="contactText">
           <ReactRotatingText items={['Contact Me...', 'Make Something Special Together']} /><br />
         </div>
-        <div data-aos="slide-left" className="inputBox">
+        <div data-aos="fade-down-right" className="inputBox">
           <input type='text' value='name' placeholder='Your Name' /><br />
           <input type='email' value='email' placeholder='Your E-mail' /><br />
           <textarea type='text' placeholder='How can I help you?' /><br />
           <button>გაგზავნა</button>
         </div>
-        <div data-aos="slide-right" className="cupWrapper">
+        <div data-aos="zoom-in-down" className="cupWrapper">
           <div className="plate"></div>
           <div className="cup">
           <div className="top">

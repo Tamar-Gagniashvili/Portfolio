@@ -16,7 +16,7 @@ header{
     position: fixed;
     text-align: center;
     width: 100%;
-    background-color: #0e1212;
+    background-color: transparent;
 }
 
 header h1{
@@ -38,6 +38,10 @@ header h1{
 .headerItem{
     display: inline-block;
     margin: 10px;
-    color: #ccc;
+    padding: 10px;
+    color: #1c0522;
+    font-weight: 700;
+    background: linear-gradient(45deg, rgb(224, 207, 223), rgb(121, 109, 150));
+    border-radius: 16px;
 }
 

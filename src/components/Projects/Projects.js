@@ -5,6 +5,8 @@ import messenger1 from '../../assets/projects/web-messenger1.png';
 import messenger2 from '../../assets/projects/web-messenger2.png';
 import Particles from 'react-particles-js';
 import woman from '../../assets/projects/artificial.jpg';
+import useWindowSize from "@rooks/use-window-size";
+import 'aos/dist/aos.css';
 
 
 
@@ -31,13 +33,20 @@ const motionForce = (x, y) => {
 
 
 const Projects = (props) => {
+  const { innerWidth, innerHeight } = useWindowSize();
+
   return (
     <div className="projectPage">
+      <div data-aos="fade-up" className="projectText1">
+        <h1>There are some of my projects</h1>
+      </div>
       <div className="particle">
         <ParticleImage
+          width={Number(innerWidth)}
+          height={Number(innerHeight)}
           className="particleMark"
           src={woman}
-          scale={0.50}
+          scale={0.75}
           entropy={10}
           maxParticles={9200}
           particleOptions={particleOptions}
@@ -77,8 +86,38 @@ const Projects = (props) => {
         <span className="photo8">
           <a target="blank" href="https://web-messenger.netlify.app/login"><img src={messenger2} alt="" /></a>
         </span>
-      </div><br />
-      <h1>Choose The Project...</h1>
+      </div>
+      <h1 data-aos="fade-right">Choose The Project...</h1>
+      <div data-aos="fade-up" className="boxWrapper">
+        <div className="box">
+          <div className="imgBox">
+            <img src={weather} />
+          </div>
+          <div className="content">
+            <h2><a target="blank"href="#">The weather app</a><br /><span>Find the weather around the world</span></h2>
+          </div>
+        </div>
+
+
+        <div className="box">
+          <div className="imgBox">
+            <img src={messenger1} />
+          </div>
+          <div className="content">
+            <h2><a target="blank"href="#">Web-Messenger</a><br /><span>Chat with your friends</span></h2>
+          </div>
+        </div>
+
+
+        <div className="box">
+          <div className="imgBox">
+            <img src={messenger2} />
+          </div>
+          <div className="content">
+            <h2><a target="blank"href="#">To Do List</a><br /><span>Plan your actions, now in your personal application</span></h2>
+          </div>
+        </div>
+      </div>
     </div>
   )
 

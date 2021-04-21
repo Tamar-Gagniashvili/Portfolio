@@ -1,3 +1,10 @@
+.aboutPage{
+    width: 100%;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+}
 .aboutWrapper{
     width: 100%;
     position: relative;
@@ -9,22 +16,25 @@
 }
 
 .aboutText{
-    width: 30%;
+    width: 70%;
     height: 70vh;
     color: teal;
     font-size: 25px;
-    margin: 10%;
+    margin:auto;
     margin-top: 0;
+    display: flex;
+    flex-direction: row;
 }
 
-.aboutText::before{
+.text::before{
     content: "<about>";
     font-size: 20px;
     color: rgb(107, 105, 107);
     font-style: italic;
+    margin: 10px 0px;
 }
 
-.aboutText::after{
+.text::after{
     content: "<about/>";
     font-size: 20px;
     color: rgb(107, 105, 107);
@@ -37,18 +47,47 @@
 }
 
 .text{
-    width: 100%;
+    width: 50%;
     background: transparent;
     margin: 40px;
 }
 
+.text p{
+    margin: 10px;
+    margin-left: 20px;
+}
+
 .ztext{
     position: absolute;
-    width: 100%;
+    max-width: 800px;
     height: 4vh;
-    top: 70%;
-    left: 20%;
+    top: 80%;
+    left: calc(50% - 400px);
     padding: 40px;
+}
+
+.aboutInfo{
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    margin: 20px 40px;
+}
+
+
+
+.aboutInfo::before{
+    content: "<PersonalInformation";
+    font-size: 20px;
+    color: rgb(107, 105, 107);
+    font-style: italic;
+    margin: 10px 0px;
+}
+
+.aboutInfo::after{
+    content: "/>";
+    font-size: 20px;
+    color: rgb(107, 105, 107);
+    font-style: italic;
 }
 /* 
 .text::before{
@@ -138,14 +177,76 @@
 }
 
 #fish{
-    width: 400px;
-    height: 400px;
+    max-width: 500px;
+    max-height: 500px;
     position: absolute;
-    top: 50px;
-    left: 5px;
+    top: 10%;
+    left: 0;
 
 }
 
+
+
 #fish img{
     width: 100%;
+}
+
+#fish2{
+    max-width: 500px;
+    max-height: 500px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    z-index: -1;
+}
+
+#fish2 img{
+    width: 100%;
+}
+
+.text .btnWrapper{
+    margin: auto; 
+    text-align: center; 
+    background: transparent;
+}
+.text .btnWrapper button{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    outline: none;
+   border-inline-start: 10px solid rgb(2, 126, 126);
+   border-inline-end: 10px solid rgb(2, 126, 126);
+}
+
+.text .btnWrapper button:hover{
+    border-inline-start: 30px solid rgb(2, 60, 126);
+    border-inline-end: 30px solid rgb(2, 60, 126);
+    transition: 1s;
+}
+
+.hobbyWrapper{
+    position: relative;
+    background: white;
+    width: 100%;
+    max-height: 100vh;
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    text-align: center;
+    align-items: center;
+
+}
+
+.hobbies{
+    position: relative;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+.hobbies h1{
+    color: black;
+}
+
+.hobbies img{
+    position: absolute;
 }

@@ -1,5 +1,14 @@
 @import url('https://www.youtube.com/watch?v=92a7Hj0ijLs');
 
+
+.skills{
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
 .skillsPage{
     width: 100%;
     min-height: 100vh;
@@ -71,17 +80,17 @@
     font-weight: bolder;
     font-size: 55px;
 }
-ul li{
+.skillsTextWrapper ul li{
     margin-left: 40px;
 }
 
-ul::before{
+.skillsTextWrapper ul::before{
     content: "<skills>";
     font-size: 20px;
     color: rgb(107, 105, 107);
     font-style: italic;
 }
-ul::after{
+.skillsTextWrapper ul::after{
     content: "<skills/>";
     font-size: 20px;
     color: rgb(107, 105, 107);
@@ -220,4 +229,31 @@ ul::after{
     object-fit: cover;
 }
 
+.iconsWrapper{
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+    max-height: 4vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+
+.icons{
+    max-width: 20%;
+    padding: 40px;
+    text-align: center;
+    color: rgb(78, 233, 220);
+    line-height: 20px;
+}
+
+.icons h3{
+    font-size: 20px;
+}
+
+.icons p{
+    font-size: 15px;
+    color: rgb(66, 138, 138);
+}
 

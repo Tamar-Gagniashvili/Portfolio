@@ -50,7 +50,7 @@
     margin-top: 5%;
 }
 
-input{
+.inputBox input{
     width: 50%;
     height: 5vh;
     margin: auto;
@@ -64,7 +64,7 @@ input{
     padding: 5px;
     padding-left: 15px;
 }
-textarea{
+.inputBox textarea{
     width: 50%;
     height: 6vh;
     margin: auto;
@@ -79,7 +79,7 @@ textarea{
     padding-left: 15px;
 }
 
-button{
+.inputBox button{
     width: 20%;
     height: 5vh;
     margin: auto;
