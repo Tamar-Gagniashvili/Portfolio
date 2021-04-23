@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Work+Sans:wght@100&family=Zen+Dots&display=swap');
+
+
 .photo1{
     --i:1;
     
@@ -29,14 +32,16 @@
 .projectPage{
     position: relative;
     margin-top: 5%;
-    min-height: 150vh;
+    min-height: 240vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
 }
 
-.projectsWrapper{
+
+
+/* .projectsWrapper{
     position: absolute;
     top: 20%;
     right:10%;
@@ -100,43 +105,22 @@
     object-fit: cover;
 }
 
-/* .triangleUp{
-    border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid #555;
-}
-.triangleDown{
-    border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #555;
-} */
-
 
 .projectsWrapper span img:hover{
     transform:scale(1.1);
     cursor: pointer;
-}
+} */
 
 h1{
     font-size: 70px;
     position: absolute;
-    bottom: 35%;
+    top: 35%;
     margin: auto;
-    color: slateblue;
+    color: #a9cdd3;
+    color: rgb(161, 139, 173);
+    font-family: "MG Glaho Drunk", sans-serif;
 }
 
-/* h1::before{
-    content: "<h1>";
-    font-size: 20px;
-    color: rgb(107, 105, 107);
-    font-style: italic;
-}
-h1::after{
-    content: "<h1/>";
-    font-size: 20px;
-    color: rgb(107, 105, 107);
-    font-style: italic;
-} */
 
 .particle{
     position: absolute;
@@ -144,41 +128,24 @@ h1::after{
     left: 5%;
 }
 
-.projectText1{
-    max-width: 40%;
-    max-height: 80vh;
+.projectBox{
+    width:60%;
+    margin: auto;
+    bottom: 0px;
+    height: 1000px;
+    background: transparent;
     position: absolute;
-    top: 50%;
-    left: 15%;
-    line-break:auto;
-    font-size: 20px;
-    color: black;
-    font-weight: bold;
-    line-height: 80px;
-}
-
-
-.projectText1 h1::before{
-    content:'';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #6f48db, #ad486b);
-}
-.projectText1 h1::before{
-    content:'';
-    border: 3px solid linear-gradient(45deg,#6f48db, #ad486b);
-    filter: blur(60px);
+    display: flex;
+    flex-direction: column;
 }
 
 .boxWrapper{
-    width:60%;
+    /* width: 100%; */
     margin: auto;
-    max-height: 300px;
+    /* margin-top: 30px;
+    max-height: 300px; */
     background: transparent;
-    position: absolute;
+    position: relative;
     bottom: 0px;
     display: flex;
     flex-direction: row;
@@ -188,14 +155,15 @@ h1::after{
 .box{
     position: relative;
     width: 300px;
-    height: 200px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px;
     transition: 0.5s;
-    margin: 40px;
+    margin-left: 0px;
     background: #060c21;
+    font-family: 'Orelega One', cursive;
 }
 
 .box .imgBox{
@@ -211,6 +179,7 @@ h1::after{
     width: 100%;
     opacity: 0.1;
     transition: 0.5s;
+    object-fit: cover;
 }
 
 .box:hover{
@@ -271,19 +240,20 @@ h1::after{
 
 .box:hover .content{
     opacity: 1;
-    color: white;
+    color: rgb(169, 216, 238);
 }
 
 .box .content h2 a{
     font-size: 20px;
-    color: #fff;
+    color: rgb(169, 216, 238);
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 1px;
+    text-transform: capitalize;
 }
 .box .content span{
     font-size: 14px;
-    color: #fff;
+    color: rgb(169, 216, 238);
     font-weight: 200;
     letter-spacing: 2px;
 }

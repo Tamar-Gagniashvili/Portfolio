@@ -1,24 +1,24 @@
 import React from 'react';
 import './Projects.css';
 import weather from '../../assets/projects/weather.png';
-import messenger1 from '../../assets/projects/web-messenger1.png';
-import messenger2 from '../../assets/projects/web-messenger2.png';
-import Particles from 'react-particles-js';
+import messenger from '../../assets/projects/web-messenger.png';
+import burger from '../../assets/projects/burger.png';
+import todo from '../../assets/projects/todo.png';
+import calculator from '../../assets/projects/calculator.png';
+import clock from '../../assets/projects/clock.png';
+import drum from '../../assets/projects/drum.png';
 import woman from '../../assets/projects/artificial.jpg';
 import useWindowSize from "@rooks/use-window-size";
 import 'aos/dist/aos.css';
 
-
-
 import ParticleImage, { forces } from "react-particle-image";
-import { useEffect } from 'react/cjs/react.production.min';
 
 const particleOptions = {
   filter: ({ x, y, image }) => {
     const pixel = image.get(x, y);
     return pixel.b > 50;
   },
-  color: ({ x, y, image }) => "#8dbda6"
+  color: ({ x, y, image }) => "#a9cdd3"
 };
 
 
@@ -37,9 +37,6 @@ const Projects = (props) => {
 
   return (
     <div className="projectPage">
-      <div data-aos="fade-up" className="projectText1">
-        <h1>There are some of my projects</h1>
-      </div>
       <div className="particle">
         <ParticleImage
           width={Number(innerWidth)}
@@ -55,7 +52,7 @@ const Projects = (props) => {
           backgroundColor="transparent"
         />
       </div>
-      <div className="projectsWrapper">
+      {/* <div className="projectsWrapper">
         <span className="photo1">
           <a target="blank" href="https://find-world-weather.netlify.app/"><img src={weather} alt="" /></a>
         </span>
@@ -86,38 +83,79 @@ const Projects = (props) => {
         <span className="photo8">
           <a target="blank" href="https://web-messenger.netlify.app/login"><img src={messenger2} alt="" /></a>
         </span>
+      </div> */}
+      <h1 data-aos="fade-right">ზოგიერთი ჩემი პროქტი...</h1>
+      <div data-aos="fade-up" className="projectBox">
+        <div  className="boxWrapper">
+
+          <div className="box">
+            <div className="imgBox">
+              <img src={weather} />
+            </div>
+            <div className="content">
+              <h2><a target="blank" href="#">The weather app</a></h2>
+            </div>
+          </div>
+
+          <div className="box">
+            <div className="imgBox">
+              <img src={messenger} />
+            </div>
+            <div className="content">
+              <h2><a target="blank" href="#">Web-Messenger</a></h2>
+            </div>
+          </div>
+
+          <div className="box">
+            <div className="imgBox">
+              <img src={todo} />
+            </div>
+            <div className="content">
+              <h2><a target="blank" href="#">To Do List</a></h2>
+            </div>
+          </div>
+        </div>
+
+        <div  className="boxWrapper">
+          <div className="box">
+            <div className="imgBox">
+              <img src={calculator} />
+            </div>
+            <div className="content">
+              <h2><a target="blank" href="#">Calculator</a></h2>
+            </div>
+          </div>
+          <div className="box">
+            <div className="imgBox">
+              <img src={drum} />
+            </div>
+            <div className="content">
+              <h2><a target="blank" href="#">Drum Machine</a></h2>
+            </div>
+          </div>
+
+          <div className="box">
+            <div className="imgBox">
+              <img src={clock} />
+            </div>
+            <div className="content">
+              <h2><a target="blank" href="#">25 Plus 5 Clock</a></h2>
+            </div>
+          </div>
+        </div>
+
+        <div className="boxWrapper">
+          <div className="box">
+            <div className="imgBox">
+              <img src={burger} />
+            </div>
+            <div className="content">
+              <h2><a target="blank" href="#">Order a Burger</a></h2>
+            </div>
+          </div>
+        </div>
       </div>
-      <h1 data-aos="fade-right">Choose The Project...</h1>
-      <div data-aos="fade-up" className="boxWrapper">
-        <div className="box">
-          <div className="imgBox">
-            <img src={weather} />
-          </div>
-          <div className="content">
-            <h2><a target="blank"href="#">The weather app</a><br /><span>Find the weather around the world</span></h2>
-          </div>
-        </div>
 
-
-        <div className="box">
-          <div className="imgBox">
-            <img src={messenger1} />
-          </div>
-          <div className="content">
-            <h2><a target="blank"href="#">Web-Messenger</a><br /><span>Chat with your friends</span></h2>
-          </div>
-        </div>
-
-
-        <div className="box">
-          <div className="imgBox">
-            <img src={messenger2} />
-          </div>
-          <div className="content">
-            <h2><a target="blank"href="#">To Do List</a><br /><span>Plan your actions, now in your personal application</span></h2>
-          </div>
-        </div>
-      </div>
     </div>
   )
 

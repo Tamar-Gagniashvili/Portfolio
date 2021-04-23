@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Work+Sans:wght@100&family=Zen+Dots&display=swap');
 
 .layout{
     width: 100%;
@@ -12,11 +12,11 @@
 header{
     z-index: 1;
     margin: 0;
-    height: 6vh;
+    height: 8vh;
     position: fixed;
     text-align: center;
     width: 100%;
-    background-color: transparent;
+    background-color: rgba(14, 18, 18, 0.5);
 }
 
 header h1{
@@ -39,9 +39,12 @@ header h1{
     display: inline-block;
     margin: 10px;
     padding: 10px;
-    color: #1c0522;
+    color: #e4dfe6;
     font-weight: 700;
-    background: linear-gradient(45deg, rgb(224, 207, 223), rgb(121, 109, 150));
+    background: linear-gradient(45deg, rgb(86, 71, 102), rgb(64, 52, 92));
     border-radius: 16px;
+    font-family: "ALK Rounded Mtav Med", sans-serif;
+    font-family: 'Orelega One', cursive;
+    font-weight: 200;
 }
 

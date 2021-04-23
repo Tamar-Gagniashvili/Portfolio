@@ -1,11 +1,15 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router';
-import Admin from './Admin/index';
 import './App.css';
-import GetStarted from './components/GetStarted/GetStarted'
 import Layout from './components/Layout/Layout';
 import Home from './components/Home/Home';
 import 'bpg-nino-mkhedruli';
+import 'mg-glaho-drunk';
+import 'arial-geo-bold';
+import 'bpg-ucnobi';
+import 'bpg-algeti-compact';
+import 'bpg-le-studio-04-caps';
+import 'alk-rounded-mtav-med'
 
 function App() {
   return (
@@ -14,8 +18,6 @@ function App() {
       <Layout>
         <Switch>
           <Route path='/' exact component={Home} />
-          {/* <Route path='/admin' component={Admin}/> */}
-          {/* <Route path='/' exact component={GetStarted}/> */}
           <Redirect to='/' />
         </Switch>
       </Layout>

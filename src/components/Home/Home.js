@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './Home.css';
-import mark from '../../assets/images.png';
+// import mark from '../../assets/images.png';
 // import Particles from 'react-particles-js';
 // import Typist from 'react-typist';
 import stars from '../../assets/Home/stars.png';
@@ -12,7 +12,6 @@ import About from '../About/About';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
-import Ztext from 'react-ztext';
 
 
 
@@ -71,10 +70,10 @@ const Home = (props) => {
                 <img src={moon} id="moon" />
                 <img src={mountainsBehind} id="mountainsBehind" />
                 <Typist>
-                    <h2 id="text">T.Gagniashvili</h2><br />
+                    <h2 id="text">თ.გაგნიაშვილი</h2><br />
                 </Typist>
                 <Typist>
-                    <p id="paragraph">Web Developer</p>
+                    <p id="paragraph">ვებ-დეველოპერი</p>
                 </Typist>
                 <img src={mountainsFront} id="mountainsFront" />
             </section>
