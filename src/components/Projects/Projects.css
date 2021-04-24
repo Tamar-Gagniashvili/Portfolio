@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Work+Sans:wght@100&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 
 .photo1{
@@ -129,27 +130,26 @@ h1{
 }
 
 .projectBox{
-    width:60%;
+    width:100%;
     margin: auto;
     bottom: 0px;
-    height: 1000px;
+    /* height: 1000px; */
     background: transparent;
     position: absolute;
+    top: 40%;
     display: flex;
     flex-direction: column;
 }
 
 .boxWrapper{
-    /* width: 100%; */
+    width: auto;
     margin: auto;
-    /* margin-top: 30px;
-    max-height: 300px; */
     background: transparent;
     position: relative;
     bottom: 0px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    text-align: center;
 }
 
 .box{
@@ -159,9 +159,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin: 20px;
     transition: 0.5s;
-    margin-left: 0px;
     background: #060c21;
     font-family: 'Orelega One', cursive;
 }
@@ -256,4 +255,45 @@ h1{
     color: rgb(169, 216, 238);
     font-weight: 200;
     letter-spacing: 2px;
+}
+
+.iconsWrapper{
+    width: auto;
+    margin: auto;
+    position: relative;
+}
+
+
+
+.iconsBox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.iconsBox h2{
+    font-size: 40px;
+    font-family: "BPG Ucnobi", sans-serif;
+    color: rgb(225, 255, 205);
+    font-weight: bold;
+}
+
+.gitIcon{
+    font-size: 80px;
+    margin: 10px;
+    color: rgb(83, 68, 121);
+}
+.codeIcon{
+    font-size: 80px;
+    margin: 10px;
+    color: rgb(83, 68, 121);
+}
+
+.iconsWrapper a:hover .codeIcon{
+    color: rgb(193, 192, 194);
+    cursor: pointer;
+}
+.iconsWrapper a:hover .gitIcon{
+    color: rgb(193, 192, 194);
+    cursor: pointer;
 }

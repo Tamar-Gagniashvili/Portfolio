@@ -15,7 +15,7 @@ import { BsServer } from "react-icons/bs";
 const Skills = (props) => {
 
     return (
-        <div className="skills">
+        <div className="skills" id="skillsPage">
             <div className="skillsPage">
                 <div data-aos="fade-left" className="skillsVideo">
                     <div className="videoWrapper">

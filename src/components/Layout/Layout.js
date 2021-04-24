@@ -10,21 +10,31 @@ import MouseParticles from 'react-mouse-particles';
 * @function Layout
 **/
 
+
 const Layout = (props) => {
+   const clickHandler = (id) =>{
+    let elmnt = document.getElementById(id);
+
+    elmnt.scrollIntoView(true);
+   }
+
   return (
     <div className="layout">
       <header>
         <div className="headerItems">
-          <div className="headerItem">ჩემს შესახებ</div>
-          <div className="headerItem">რეზიუმე</div>
-          <div className="headerItem">პროექტები</div>
-          <div className="headerItem">კონტაქტი</div>
+          <div className="headerItem" onClick={()=>clickHandler("aboutPage")}>ჩემს შესახებ</div>
+          <div className="headerItem" onClick={()=>clickHandler("skillsPage")}>რეზიუმე</div>
+          <div className="headerItem" onClick={()=>clickHandler("projectPage")}>პროექტები</div>
+          <div className="headerItem" onClick={()=>clickHandler("contactPage")}>კონტაქტი</div>
         </div>
       </header>
       <div>
         {props.children}
         <MouseParticles g={1} color="random" cull="col,image-wrapper"/>
       </div>
+      <footer>
+        <span>© აპლიკაცია შექმნილია თამარ გაგნიაშვილის მიერ, 2021</span>
+      </footer>
     </div>
   )
 

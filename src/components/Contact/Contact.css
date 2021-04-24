@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Work+Sans:wght@100&family=Zen+Dots&display=swap');
 .contactPage{
     position: relative;
-    height: 150vh;
+    height: 120vh;
     width: 100%;
     background-color: silver;
     justify-content: center;
     align-items: center;
     background-color: transparent;
     color: rgb(243, 79, 112);
+    margin-top: 5%;
 }
 
 .contactWrapper{
@@ -28,6 +29,7 @@
     font-weight: bold;
     color: crimson;
     font-family: 'Orelega One', cursive;
+    font-family: "BPG Ucnobi", sans-serif;
 }
 
 .react-rotating-text-cursor {
@@ -52,6 +54,7 @@
     margin: auto;
     margin-top: 5%;
     font-family: 'Work Sans', sans-serif;
+    font-family: "BPG Ucnobi", sans-serif;
 }
 
 .inputBox input{
@@ -99,7 +102,7 @@
 
 .cupWrapper{
   position: absolute;
-  bottom: 25%;
+  bottom: 15%;
   right: 20%;
 
 }

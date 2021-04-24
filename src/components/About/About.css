@@ -76,9 +76,20 @@
     margin-left: 20px;
 }
 
+.aboutInfo ul li a{
+    color: rgb(163, 176, 211);
+    text-decoration: none;
+}
+.aboutInfo ul li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
 .aboutInfo span{
     text-decoration: underline;
     font-family: "MG Glaho Drunk", sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
     font-weight: bold;
 }
 

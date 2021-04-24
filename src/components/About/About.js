@@ -54,7 +54,7 @@ const About = (props) => {
 
 
   return (
-    <div className="aboutWrapper">
+    <div className="aboutWrapper" id="aboutPage">
 
       <div data-aos="fade-left" id="fish">
         <img src={fish} />
@@ -110,7 +110,7 @@ const About = (props) => {
             <li><span>მეილი:</span> tamo.gagniashvili@gmail.com</li>
             <li><span>ტელეფონი:</span> 598 43 22 20</li>
             <li><span>Freelance:</span> ხელმისაწვდომი</li>
-            <li><span>Github:</span> Tamar-Gagniashvili</li>
+            <li><span>Github:</span><a target="blank" href="https://github.com/Tamar-Gagniashvili?tab=repositories">Tamar-Gagniashvili</a> </li>
           </ul>
         </div>
       </div>

@@ -1,6 +1,8 @@
 @import url('https://www.youtube.com/watch?v=FJ8ay4tWgFc');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 .skills{
     width: 100%;
     min-height: 120vh;
@@ -34,6 +36,7 @@
     font-weight: bolder;
     font-size: 50px;
     font-family: 'RocknRoll One', sans-serif;
+    font-family: "BPG Ucnobi", sans-serif;
 }
 .skillsTextWrapper ul li{
     margin-left: 40px;
@@ -97,13 +100,13 @@
 .iconsWrapper{
     max-width: 80%;
     margin: auto;
-    position: relative;
+    position: absolute;
     max-height: 4vh;
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    bottom: 0;
     font-family: "BPG Ucnobi", sans-serif;
+
 }
 
 .icons{

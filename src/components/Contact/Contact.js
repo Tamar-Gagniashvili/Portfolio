@@ -12,7 +12,7 @@ const Contact = (props) => {
   const ReactRotatingText = require('react-rotating-text');
 
   return (
-    <div className="contactPage">
+    <div className="contactPage" id="contactPage">
       <div className="contactWrapper">
         <div data-aos="zoom-out-up" className="contactText">
           <ReactRotatingText items={['Contact Me...', 'Make Something Special Together']} /><br />

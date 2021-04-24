@@ -10,6 +10,7 @@ import drum from '../../assets/projects/drum.png';
 import woman from '../../assets/projects/artificial.jpg';
 import useWindowSize from "@rooks/use-window-size";
 import 'aos/dist/aos.css';
+import { AiOutlineCodepen, AiOutlineGithub } from "react-icons/ai";
 
 import ParticleImage, { forces } from "react-particle-image";
 
@@ -36,7 +37,7 @@ const Projects = (props) => {
   const { innerWidth, innerHeight } = useWindowSize();
 
   return (
-    <div className="projectPage">
+    <div className="projectPage" id="projectPage">
       <div className="particle">
         <ParticleImage
           width={Number(innerWidth)}
@@ -86,7 +87,7 @@ const Projects = (props) => {
       </div> */}
       <h1 data-aos="fade-right">ზოგიერთი ჩემი პროქტი...</h1>
       <div data-aos="fade-up" className="projectBox">
-        <div  className="boxWrapper">
+        <div className="boxWrapper">
 
           <div className="box">
             <div className="imgBox">
@@ -116,7 +117,7 @@ const Projects = (props) => {
           </div>
         </div>
 
-        <div  className="boxWrapper">
+        <div className="boxWrapper">
           <div className="box">
             <div className="imgBox">
               <img src={calculator} />
@@ -154,7 +155,16 @@ const Projects = (props) => {
             </div>
           </div>
         </div>
+
+        <div className="boxWrapper iconsBox">
+          <h2>See my projects on GitHub and CodePen</h2>
+          <div className="iconsWrapper">
+            <a target="blank" href="https://github.com/Tamar-Gagniashvili?tab=repositories"><AiOutlineGithub className="gitIcon" /></a>
+            <a target="blank" href="https://codepen.io/your-work/"><AiOutlineCodepen className="codeIcon" /></a>
+          </div>
+        </div>
       </div>
+
 
     </div>
   )
