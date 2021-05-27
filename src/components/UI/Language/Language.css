@@ -1,0 +1,28 @@
+.Language{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: transparent;
+    z-index: 11;
+}
+
+.Language button{
+    width: 3rem;
+    height: 2rem;
+    margin: 5px;
+    border-style: hidden;
+    background-color: #3f1a4b;
+    color: rgb(240, 229, 245);
+    border-style: none;
+    border-radius: 3px;
+    font-size: 13px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.Language button:hover{
+    background-color: #664c6e;
+    color: rgb(27, 2, 34);
+}
+

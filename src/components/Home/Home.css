@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 
 *{
     scroll-behavior: smooth;
@@ -41,6 +41,21 @@
     pointer-events: none;
 }
 
+.ENG{  
+    font-family: 'Original Surfer', cursive;
+    top: 30%;
+    left: 20%;
+    font-weight: 300;
+    font-size: 8.5vw;
+} 
+.GEO{
+    font-family: "BPG LE Studio 04 Caps", sans-serif;
+    top: 30%;
+    left: 20%;
+    font-weight: 300;
+    font-size: 6.5vw;
+} 
+
 #moon{
     mix-blend-mode: screen;
 }
@@ -49,13 +64,7 @@
     position: absolute;
     color: #fff;
     white-space: nowrap;
-    font-size: 6.5vw;
     z-index: 11;
-    top: 30%;
-    left: 20%;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
-    font-family: "BPG LE Studio 04 Caps", sans-serif;
 }
 
 #mountainsFront{
@@ -85,4 +94,22 @@
 
 .Cursor--blinking{
     display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .GEO{
+        font-size: 7.5vw;
+    }
+    .ENG{
+        font-size: 7.5vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .GEO{
+        top: 40%;
+    }
+    .ENG{
+        top: 40%;
+    }
 }

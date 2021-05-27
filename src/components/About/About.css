@@ -10,7 +10,7 @@
 .aboutWrapper{
     width: 100%;
     position: relative;
-    min-height: 120vh;
+    min-height: 125vh;
     background-color: transparent;
     padding-top: 20%;
     display: flex;
@@ -19,7 +19,7 @@
 
 .aboutText{
     width: 70%;
-    height: 70vh;
+    max-height: 70vh;
     color: teal;
     font-size: 25px;
     margin:auto;
@@ -30,7 +30,7 @@
 
 .text::before{
     content: "<about>";
-    font-size: 20px;
+    font-size: 1.3vw;
     color: rgb(120, 127, 148);
     font-style: italic;
     margin: 10px 0px;
@@ -38,7 +38,7 @@
 
 .text::after{
     content: "<about/>";
-    font-size: 20px;
+    font-size: 1.3vw;
     color: rgb(120, 127, 148);
     font-style: italic;
 }
@@ -61,11 +61,12 @@
 .text p{
     margin: 10px;
     margin-left: 20px;
+    font-size: 1.6vw;
 }
 
 
 .aboutInfo{
-    font-size: 20px;
+    font-size: 1.3vw;
     line-height: 40px;
     color: rgb(205, 218, 255);
     margin: 20px 40px;
@@ -95,7 +96,7 @@
 
 .aboutInfo::before{
     content: "<PersonalInformation";
-    font-size: 20px;
+    font-size: 1.3vw;
     color: rgb(120, 127, 148);
     font-style: italic;
     margin: 10px 0px;
@@ -103,15 +104,14 @@
 
 .aboutInfo::after{
     content: "/>";
-    font-size: 20px;
+    font-size: 1.3vw;
     color: rgb(120, 127, 148);
     font-style: italic;
 }
 
 
 #fish{
-    max-width: 500px;
-    max-height: 500px;
+    width: 42vw;
     position: absolute;
     top: 5%;
     left: 0;
@@ -125,10 +125,9 @@
 }
 
 #fish2{
-    max-width: 500px;
-    max-height: 500px;
+    width: 40vw;
     position: absolute;
-    top: 55%;
+    top: 60%;
     right: 0%;
     z-index: -1;
 }
@@ -238,4 +237,61 @@
 .animationWrapper span i:nth-child(2) {
     font-style: initial;
     color: #12b5ff;
+}
+
+@media only screen and (max-width: 1600px) {
+    .aboutText{
+        margin-top: 5%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .aboutText{
+        flex-direction: column;
+    }
+    .text{
+        width: 100%;
+    }
+
+    .aboutInfo{
+        margin-top:0px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #fish2{
+        width: 45vw;
+        left: 90%;
+        top: 70%;
+    }
+    .text p{
+        line-height: 20px;
+    }
+
+    .aboutInfo{
+        line-height: 20px;
+    }
+
+    .aboutWrapper{
+        min-height: 80vh;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #fish{
+        display: none;
+    }
+    .aboutText{
+        margin-top: 0px;
+        width: 80%;
+    }
+
+    #fish2{
+        left: 80%;
+        top: 65%;
+    }
+    .text{
+        margin-left: 0;
+    }
+
+    .aboutInfo{
+        margin-left: 0;
+    }
 }

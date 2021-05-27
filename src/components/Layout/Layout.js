@@ -4,6 +4,9 @@ import './Layout.css'
 // import { Link } from 'react-router-dom';
 // import { BsCollection, BsEnvelope, BsPerson, BsReverseLayoutTextSidebarReverse } from 'react-icons/bs';
 import MouseParticles from 'react-mouse-particles';
+import { useTranslation } from 'react-i18next';
+import Language from '../UI/Language/Language'
+
 
 /**
 * @author
@@ -12,28 +15,32 @@ import MouseParticles from 'react-mouse-particles';
 
 
 const Layout = (props) => {
-   const clickHandler = (id) =>{
+  const { t } = useTranslation();
+
+  const clickHandler = (id) => {
     let elmnt = document.getElementById(id);
 
     elmnt.scrollIntoView(true);
-   }
+  }
 
   return (
     <div className="layout">
       <header>
         <div className="headerItems">
-          <div className="headerItem" onClick={()=>clickHandler("aboutPage")}>ჩემს შესახებ</div>
-          <div className="headerItem" onClick={()=>clickHandler("skillsPage")}>რეზიუმე</div>
-          <div className="headerItem" onClick={()=>clickHandler("projectPage")}>პროექტები</div>
-          <div className="headerItem" onClick={()=>clickHandler("contactPage")}>კონტაქტი</div>
+          <div className="headerItem" onClick={() => clickHandler("aboutPage")}>{t("about")}</div>
+          <div className="headerItem" onClick={() => clickHandler("skillsPage")}>{t("skills")}</div>
+          <div className="headerItem" onClick={() => clickHandler("projectPage")}>{t("projects")}</div>
+          <div className="headerItem" onClick={() => clickHandler("contactPage")}>{t("contact")}</div>
         </div>
       </header>
       <div>
+        <Language />
         {props.children}
-        <MouseParticles g={1} color="random" cull="col,image-wrapper"/>
+        <MouseParticles g={1} color="random" cull="col,image-wrapper" />
+        
       </div>
       <footer>
-        <span>© აპლიკაცია შექმნილია თამარ გაგნიაშვილის მიერ, 2021</span>
+        <span>© {t("footer")}, 2021</span>
       </footer>
     </div>
   )

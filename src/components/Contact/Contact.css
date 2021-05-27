@@ -4,12 +4,12 @@
     position: relative;
     height: 120vh;
     width: 100%;
-    background-color: silver;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     background-color: transparent;
     color: rgb(243, 79, 112);
-    margin-top: 5%;
+    margin-top: 18%;
 }
 
 .contactWrapper{
@@ -23,13 +23,14 @@
     text-align: center;
 }
 
-.contactText{
-    font-size: 40px;
-    margin-top: 20%;
-    font-weight: bold;
-    color: crimson;
-    font-family: 'Orelega One', cursive;
-    font-family: "BPG Ucnobi", sans-serif;
+.contactText h1{
+  position: relative;
+  margin-top: 25%;
+  font-size: 2.6vw;
+  font-weight: bold;
+  color: crimson;
+  font-family: 'Orelega One', cursive;
+  font-family: "BPG Ucnobi", sans-serif;
 }
 
 .react-rotating-text-cursor {
@@ -57,12 +58,19 @@
     font-family: "BPG Ucnobi", sans-serif;
 }
 
+.inputBox input::placeholder{
+  color: rgb(102, 34, 47);
+}
+.inputBox textarea::placeholder{
+  color: rgb(102, 34, 47);
+}
+
 .inputBox input{
     width: 50%;
     height: 5vh;
     margin: auto;
     margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1) !important;
     border-radius: 8px;
     outline: none;
     border: none;
@@ -102,7 +110,7 @@
 
 .cupWrapper{
   position: absolute;
-  bottom: 15%;
+  bottom: 25%;
   right: 20%;
 
 }
@@ -307,5 +315,19 @@
 button:hover{
     background-color: brown;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 900px){
+  .cupWrapper{
+    display: none;
+  }
+
+  .contactWrapper{
+    width:80%;
+    margin: auto;
+  }
+  .contactPage{
+    height: 80vh;
+  }
 }
 

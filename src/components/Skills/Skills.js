@@ -6,6 +6,8 @@ import { BsGear } from "react-icons/bs";
 import { BsDisplay } from "react-icons/bs";
 import { BsEye } from "react-icons/bs";
 import { BsServer } from "react-icons/bs";
+import { useTranslation } from 'react-i18next';
+
 
 /**
 * @author
@@ -13,13 +15,15 @@ import { BsServer } from "react-icons/bs";
 **/
 
 const Skills = (props) => {
+  const { t } = useTranslation();
+
 
     return (
         <div className="skills" id="skillsPage">
             <div className="skillsPage">
                 <div data-aos="fade-left" className="skillsVideo">
                     <div className="videoWrapper">
-                        <ReactPlayer fluid={false} width={'100%'} height={'70vh'} className="video" url='https://www.youtube.com/watch?v=FJ8ay4tWgFc' playing={true} loop muted />
+                        <ReactPlayer fluid="false" width={'100%'} height={'500px'} className="video" url='//www.youtube.com/watch?v=FJ8ay4tWgFc' playing={true} loop muted />
                         <h2>Web<br />is<br />Fun</h2>
                     </div>
                 </div>
@@ -38,26 +42,26 @@ const Skills = (props) => {
 
                     </div>
                 </div>
-                <div className="iconsWrapper">
+                <div className="skillsIconsWrapper">
                     <div className="icons">
                         <BsGear style={{ fontSize: "40px" }} />
                         <h3>Dynamic Websites</h3>
-                        <p>დინამიკური ვებ აპლიკაცია თქვენქვის და თქვენი ბიზნესისთვის</p>
+                        <p>{t("dynamicWebsites")}</p>
                     </div>
                     <div className="icons">
                         <BsDisplay style={{ fontSize: "40px" }} />
                         <h3>Responsive Web-Design</h3>
-                        <p>კომპიუტები, პლანშეტები, მობილურები - აპლიკაცია მოერგება მოწყობილობას</p>
+                        <p>{t("responsive")}</p>
                     </div>
                     <div className="icons">
                         <BsEye style={{ fontSize: "40px" }} />
                         <h3>Web Design</h3>
-                        <p>თანამედროვე და უნიკალური დიზაინი თქვენი ვებ აპლიკაციისთვის</p>
+                        <p>{t("webDesign")}</p>
                     </div>
                     <div className="icons">
                         <BsServer style={{ fontSize: "40px" }} />
                         <h3>Web API</h3>
-                        <p>პროგრამული ინტერფეისი თქვენი front-end აპლიკაციისა თუ სხვა მიზნებისთვისs</p>
+                        <p>{t("webAPI")}</p>
                     </div>
                 </div>
             </div>

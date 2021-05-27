@@ -9,9 +9,10 @@ import 'arial-geo-bold';
 import 'bpg-ucnobi';
 import 'bpg-algeti-compact';
 import 'bpg-le-studio-04-caps';
-import 'alk-rounded-mtav-med'
+import 'alk-rounded-mtav-med';
 
 function App() {
+
   return (
 
     <div className="App">

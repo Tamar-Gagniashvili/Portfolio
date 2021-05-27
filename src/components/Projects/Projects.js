@@ -11,6 +11,8 @@ import woman from '../../assets/projects/artificial.jpg';
 import useWindowSize from "@rooks/use-window-size";
 import 'aos/dist/aos.css';
 import { AiOutlineCodepen, AiOutlineGithub } from "react-icons/ai";
+import { useTranslation } from 'react-i18next';
+
 
 import ParticleImage, { forces } from "react-particle-image";
 
@@ -34,6 +36,8 @@ const motionForce = (x, y) => {
 
 
 const Projects = (props) => {
+  const { t } = useTranslation();
+
   const { innerWidth, innerHeight } = useWindowSize();
 
   return (
@@ -85,34 +89,34 @@ const Projects = (props) => {
           <a target="blank" href="https://web-messenger.netlify.app/login"><img src={messenger2} alt="" /></a>
         </span>
       </div> */}
-      <h1 data-aos="fade-right">ზოგიერთი ჩემი პროქტი...</h1>
-      <div data-aos="fade-up" className="projectBox">
+      <h1>{t("projectH1")}...</h1>
+      <div  className="projectBox">
         <div className="boxWrapper">
 
           <div className="box">
             <div className="imgBox">
-              <img src={weather} />
+              <img src={weather} alt=""/>
             </div>
             <div className="content">
-              <h2><a target="blank" href="#">The weather app</a></h2>
+              <h2><a target="blank" href="https://find-world-weather.netlify.app/">The weather app</a></h2>
             </div>
           </div>
 
           <div className="box">
             <div className="imgBox">
-              <img src={messenger} />
+              <img src={messenger} alt="" />
             </div>
             <div className="content">
-              <h2><a target="blank" href="#">Web-Messenger</a></h2>
+              <h2><a target="blank" href="https://web-messenger.netlify.app/login">Web-Messenger</a></h2>
             </div>
           </div>
 
           <div className="box">
             <div className="imgBox">
-              <img src={todo} />
+              <img src={todo} alt=""/>
             </div>
             <div className="content">
-              <h2><a target="blank" href="#">To Do List</a></h2>
+              <h2><a target="blank" href="https://in-your-element.netlify.app/">To Do List</a></h2>
             </div>
           </div>
         </div>
@@ -120,27 +124,28 @@ const Projects = (props) => {
         <div className="boxWrapper">
           <div className="box">
             <div className="imgBox">
-              <img src={calculator} />
+              <img src={calculator} alt=""/>
             </div>
             <div className="content">
-              <h2><a target="blank" href="#">Calculator</a></h2>
-            </div>
-          </div>
-          <div className="box">
-            <div className="imgBox">
-              <img src={drum} />
-            </div>
-            <div className="content">
-              <h2><a target="blank" href="#">Drum Machine</a></h2>
+              <h2><a target="blank" href="https://calculate-online.netlify.app/">Calculator</a></h2>
             </div>
           </div>
 
           <div className="box">
             <div className="imgBox">
-              <img src={clock} />
+              <img src={drum} alt=""/>
             </div>
             <div className="content">
-              <h2><a target="blank" href="#">25 Plus 5 Clock</a></h2>
+              <h2><a target="blank" href="https://fun-with-drum.netlify.app/">Drum Machine</a></h2>
+            </div>
+          </div>
+
+          <div className="box">
+            <div className="imgBox">
+              <img src={clock} alt=""/>
+            </div>
+            <div className="content">
+              <h2><a target="blank" href="https://25-plus-5-clock.netlify.app/">25 Plus 5 Clock</a></h2>
             </div>
           </div>
         </div>
@@ -148,18 +153,18 @@ const Projects = (props) => {
         <div className="boxWrapper">
           <div className="box">
             <div className="imgBox">
-              <img src={burger} />
+              <img src={burger} alt=""/>
             </div>
             <div className="content">
-              <h2><a target="blank" href="#">Order a Burger</a></h2>
+              <h2><a target="blank" href="https://order-a-burger.netlify.app/">Order a Burger</a></h2>
             </div>
           </div>
         </div>
 
-        <div className="boxWrapper iconsBox">
-          <h2>See my projects on GitHub and CodePen</h2>
+        <div className="iconsBox">
+          <h2>{t("projectH2")}</h2>
           <div className="iconsWrapper">
-            <a target="blank" href="https://github.com/Tamar-Gagniashvili?tab=repositories"><AiOutlineGithub className="gitIcon" /></a>
+            <a target="blank" href="https://github.com/Tamar-Gagniashvili"><AiOutlineGithub className="gitIcon" /></a>
             <a target="blank" href="https://codepen.io/your-work/"><AiOutlineCodepen className="codeIcon" /></a>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 // import mark from '../../assets/images.png';
 // import Particles from 'react-particles-js';
@@ -7,11 +7,13 @@ import stars from '../../assets/Home/stars.png';
 import mountainsBehind from '../../assets/Home/mountains_behind.png';
 import mountainsFront from '../../assets/Home/mountains_front.png';
 import moon from '../../assets/Home/moon.png';
-import Typist from 'react-typist';
+// import Typist from 'react-typist';
 import About from '../About/About';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
+import { useTranslation } from 'react-i18next';
+import {connect} from 'react-redux';
 
 
 
@@ -39,13 +41,14 @@ import Contact from '../Contact/Contact';
 **/
 
 const Home = (props) => {
+    const { t } = useTranslation();
 
-    let star;
-    let moonSun;
-    let mountainBehind;
-    let mountainFront;
-
+    
     useEffect(() => {
+        let star;
+        let moonSun;
+        let mountainBehind;
+        let mountainFront;
         star = document.getElementById('stars');
         moonSun = document.getElementById('moon');
         mountainBehind = document.getElementById('mountainsBehind');
@@ -53,7 +56,6 @@ const Home = (props) => {
 
         window.addEventListener('scroll', function () {
             let value = window.scrollY;
-            console.log(star)
             star.style.left = value + 'px';
             moonSun.style.top = value * 1.05 + 'px';
             mountainBehind.style.top = value * 0.5 + 'px';
@@ -66,16 +68,12 @@ const Home = (props) => {
     return (
         <div className="home">
             <section>
-                <img src={stars} id="stars" />
-                <img src={moon} id="moon" />
-                <img src={mountainsBehind} id="mountainsBehind" />
-                <Typist>
-                    <h2 id="text">თ.გაგნიაშვილი</h2><br />
-                </Typist>
-                <Typist>
-                    <p id="paragraph">ვებ-დეველოპერი</p>
-                </Typist>
-                <img src={mountainsFront} id="mountainsFront" />
+                <img src={stars} id="stars" alt=""/>
+                <img src={moon} id="moon" alt=""/>
+                <img src={mountainsBehind} id="mountainsBehind" alt=""/>
+                <h2 id="text" className={props.lang==="en" ? "ENG" : "GEO"}>{t("homeH1")}</h2><br />
+                <p id="paragraph">{t("homeP")}</p>
+                <img src={mountainsFront} id="mountainsFront" alt=""/>
             </section>
             <div id="sec2">
                 <About />
@@ -145,4 +143,10 @@ const Home = (props) => {
 
 }
 
-export default Home
+const mapStateToProps = state => {
+    return {
+        lang: state.language.language,
+    };
+}
+
+export default connect(mapStateToProps)(Home)
